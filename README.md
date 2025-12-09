@@ -55,6 +55,9 @@ question = "What is the square root of 144?"
 messages = [
     {"role": "user", "content": question}
 ]
+
+# initialize tokenizer
+tokenizer = AutoTokenizer.from_pretrained('....')
     
 prompt = tokenizer.apply_chat_template(
     messages,
